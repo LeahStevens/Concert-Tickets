@@ -15,7 +15,29 @@
 <body>
   <div id='qunit'></div>
   <div id='qunit-fixture'>
-    <!-- #map-canvas -->
+    <div class='row'>
+      <div class='small-4 columns'>
+        <div id='left'>
+          <div class='row'>
+            <div class='small-6 columns'>
+              <select>
+                <option>VIP Section</option>
+                <option>General Admission</option>
+              </select>
+            </div>
+            <div class='small-3 columns'>
+              <input id='seatNumber' placeholder='#' type='text'>
+            </div>
+            <div class='small-3 columns'>
+              <input class='button small success' id='createSeats' type='button' value='Create Seats'>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='small-8 columns'>
+        <div id='right'></div>
+      </div>
+    </div>
   </div>
   <script src='/js/vendor/jquery-1.10.2.js'></script>
   <script src='/js/vendor/foundation.min.js'></script>
