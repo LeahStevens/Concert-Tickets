@@ -19,16 +19,19 @@
       <div class='small-4 columns'>
         <div id='left'>
           <div class='row'>
-            <div class='small-6 columns'>
-              <select>
-                <option>VIP Section</option>
-                <option>General Admission</option>
+            <div class='small-5 columns'>
+              <select id='sections'>
+                <option id='vip' value='vip'>VIP Section</option>
+                <option id='gen-adm' value='gen-adm'>General Admission</option>
               </select>
             </div>
-            <div class='small-3 columns'>
+            <div class='small-2 columns'>
               <input id='seatNumber' placeholder='#' type='text'>
             </div>
             <div class='small-3 columns'>
+              <input id='seatPrice' readonly type='text' value='$'>
+            </div>
+            <div class='small-2 columns'>
               <input class='button small success' id='createSeats' type='button' value='Create Seats'>
             </div>
           </div>

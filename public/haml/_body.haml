@@ -2,13 +2,15 @@
   .small-4.columns
     #left
       .row
-        .small-6.columns
-          %select
-            %option VIP Section
-            %option General Admission
-        .small-3.columns
+        .small-5.columns
+          %select#sections
+            %option#vip{value:'vip'}  VIP Section
+            %option#gen-adm{value: 'gen-adm'} General Admission
+        .small-2.columns
           %input#seatNumber{type: 'text', placeholder: '#'}
         .small-3.columns
+          %input#seatPrice{type: 'text', value: '$', readonly: true}
+        .small-2.columns
           %input#createSeats.button.small.success{type: 'button', value: 'Create Seats'}
   .small-8.columns
     #right
