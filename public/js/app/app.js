@@ -8,8 +8,7 @@ $(document).ready(initialize);
 function initialize(fn, flag){
   if(!canRun(flag)) {return;}
   $('#createSeats').click(clickCreateSeats);
-  $('#vip').click(changeVipPrice);
-  $('#gen-adm').click(changeGeneralAdmissionPrice);
+  $('#sections').click(changePrice);
 }
 
 // ------------------------------Click Handlers---------------------------------- //
@@ -17,14 +16,15 @@ function clickCreateSeats(){
 
 }
 
-function changeVipPrice(){
-  debugger;
-  $('#seatPrice').val('$110.00');
+function changePrice(){
+  // debugger;
+  if($('#sections:first-child').val() === 'vip'){
+    $('#seatPrice').val('$90.00');
+  }
+  else{
+    $('#seatPrice').val('$110.00');
+  }
 }
-function changeGeneralAdmissionPrice(){
-  $('#seatPrice').val('$90.00');
-}
-
 
 // -------------------------------------------------------------------- //
 
