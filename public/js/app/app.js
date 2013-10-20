@@ -60,11 +60,15 @@ function clickCreateSeats(){
   if($('#sections:first-child').val() === 'vip'){
     $('#vip').remove();
     $('#seatNumber').val('');
-  }else if($('#sections').val() === null){
-    $('#left').remove();
+    if($('#sections').val() === null){
+      $('#left').remove();
+    }
   }else{
     $('#gen-adm').remove();
     $('#seatNumber').val('');
+    if($('#sections').val() === null){
+      $('#left').remove();
+    }
   }
 
 }
