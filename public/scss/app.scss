@@ -1,6 +1,66 @@
-// #map-canvas
-// {
-//   height: 250px;
-//   width: 250px;
-//   border: 1px solid black;
-// }
+#right, #left
+{
+  float: left;
+}
+
+
+#stage
+{
+  height: 100px;
+  width: 100%;
+  border: 1px solid black;
+  border-bottom-right-radius: 55px;
+  border-bottom-left-radius: 55px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#vip-container
+{
+  width: 300px;
+  margin-bottom: 50px;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+#gen-adm-container
+{
+  width: 500px;
+  margin-top: 50px;
+}
+.seats
+{
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  float: left;
+  margin-left: auto ;
+  margin-right: auto ;
+  font-size: 10px;
+}
+.VIPseatsFilled
+{
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  float: left;
+  margin-left: auto ;
+  margin-right: auto ;
+  text-align: center;
+  background-color: teal;
+  color: orange;
+}
+.GenAdmseatsFilled
+{
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  float: left;
+  margin-left: auto ;
+  margin-right: auto ;
+  text-align: center;
+  background-color: orange;
+  color: teal;
+}
+li
+{
+list-style-type: none;
+}

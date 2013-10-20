@@ -19,26 +19,84 @@
       <div class='small-4 columns'>
         <div id='left'>
           <div class='row'>
-            <div class='small-5 columns'>
+            <h2>Concert Tickets</h2>
+            <div class='small-6 columns'>
               <select id='sections'>
                 <option id='vip' value='vip'>VIP Section</option>
                 <option id='gen-adm' value='gen-adm'>General Admission</option>
               </select>
             </div>
-            <div class='small-2 columns'>
+            <div class='small-3 columns'>
               <input id='seatNumber' placeholder='#' type='text'>
             </div>
             <div class='small-3 columns'>
               <input id='seatPrice' readonly type='text' value='$'>
             </div>
-            <div class='small-2 columns'>
+          </div>
+          <div class='row'>
+            <div class='small-12 columns'>
               <input class='button small success' id='createSeats' type='button' value='Create Seats'>
             </div>
           </div>
         </div>
+        <div id='reporting'>
+          <h4>Reporting</h4>
+          <div class='row'>
+            <div class='small-6 columns'>
+              <div class='row'>
+                <div class='small-12 columns'>
+                  <div id='totalVIP'>Total VIP:</div>
+                  <div id='totalGA'>Total GA:</div>
+                  <div id='grandTotal'>Grand Total:</div>
+                  <div id='vipPeople'>VIP People:</div>
+                  <div id='gaPeople'>GA People:</div>
+                  <div id='totalPeople'>Total People:</div>
+                </div>
+              </div>
+            </div>
+            <div class='small-6 columns'>
+              <h5>Seat List</h5>
+              <div class='row'>
+                <div class='small-2 columns'>
+                  <h6>VIP</h6>
+                </div>
+                <div class='small-10 columns'>
+                  <ul id='VIPSeatList'></ul>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='small-2 columns'>
+                  <h6>GA</h6>
+                </div>
+                <div class='small-10 columns'>
+                  <ul id='genAdmSeatList'></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class='small-8 columns'>
-        <div id='right'></div>
+      <div class='small-6 columns'>
+        <div id='right'>
+          <div class='row'>
+            <div class='small-12 columns'>
+              <div id='stage'>Stage</div>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='small-12 columns'>
+              <div id='vip-container'></div>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='small-12 columns'>
+              <div id='gen-adm-container'></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='small-2 columns'>
+        <input id='name' placeholder='Name' type='text'>
       </div>
     </div>
   </div>

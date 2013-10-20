@@ -30,14 +30,18 @@ test('Correct Number of Seats', function(){
 });
 
 test('Correct Price of Section Seats', function(){
-  expect(2);
+  expect(1);
 
-  $('#seatPrice').val('$110.00');
+  $('#sections:first-child').trigger('click');
   deepEqual($('#seatPrice').val(),'$110.00','The price of VIP Seats should be $110.00 ');
-  $('#CreateSeats').trigger('click');
 
-  $('#seatPrice').val('$90.00');
-  deepEqual($('#seatPrice').val(),'$90.00','The price of General Admission Seats should be $90.00 ');
-  $('#CreateSeats').trigger('click');
+  // $('#sections:last-child').trigger('click');
+  // deepEqual($('#seatPrice').val(),'$90.00','The price of General Admission Seats should be $90.00 ');
+});
+
+test('Creating Boxes', function(){
+  expect(1);
+
+
 
 });

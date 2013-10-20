@@ -2,15 +2,52 @@
   .small-4.columns
     #left
       .row
-        .small-5.columns
+        %h2 Concert Tickets
+        .small-6.columns
           %select#sections
             %option#vip{value:'vip'}  VIP Section
             %option#gen-adm{value: 'gen-adm'} General Admission
-        .small-2.columns
+        .small-3.columns
           %input#seatNumber{type: 'text', placeholder: '#'}
         .small-3.columns
           %input#seatPrice{type: 'text', value: '$', readonly: true}
-        .small-2.columns
+      .row
+        .small-12.columns
           %input#createSeats.button.small.success{type: 'button', value: 'Create Seats'}
-  .small-8.columns
+    #reporting
+      %h4 Reporting
+      .row
+        .small-6.columns
+          .row
+            .small-12.columns
+              #totalVIP Total VIP:
+              #totalGA Total GA:
+              #grandTotal Grand Total:
+              #vipPeople VIP People:
+              #gaPeople GA People:
+              #totalPeople Total People:
+        .small-6.columns
+          %h5 Seat List
+          .row
+            .small-2.columns
+              %h6 VIP
+            .small-10.columns
+              %ul#VIPSeatList
+          .row
+            .small-2.columns
+              %h6 GA
+            .small-10.columns
+              %ul#genAdmSeatList
+  .small-6.columns
     #right
+      .row
+        .small-12.columns
+          #stage Stage
+      .row
+        .small-12.columns
+          #vip-container
+      .row
+        .small-12.columns
+          #gen-adm-container
+  .small-2.columns
+    %input#name{type: 'text', placeholder: 'Name'}
